@@ -1,0 +1,139 @@
+:root{
+  --Paleblue: hsl(225, 100%, 94%);
+  --Brightblue: hsl(245, 75%, 52%);
+
+
+  --Verypaleblue: hsl(225, 100%, 98%);
+  --Desaturatedblue: hsl(224, 23%, 55%);
+  --Darkblue: hsl(223, 47%, 23%);
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  width: 100vw;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  
+  font-size: 1.6rem;
+  font-family: 'Red Hat Display', sans-serif;
+  background-color: var(--Paleblue);
+
+}
+
+.card{
+  width: calc(100% - 15%);
+  max-width: 38rem;
+  margin-inline: auto;
+  background-color: var(--Verypaleblue);
+  border-radius: 2.5rem;
+  
+  overflow: hidden;
+}
+
+.card__hero--img{
+  width: 100%;
+}
+
+.card__content{
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+
+  padding:2.5rem 3rem;
+  text-align: center;
+  color: var(--Desaturatedblue);
+}
+
+.card__content h1{
+  color: var(--Darkblue);
+  font-weight: 900;
+}
+
+.card__plan{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-block: 1.5rem;
+  padding-inline: 1rem;
+  border-radius: 1.25rem;
+  background-color: var(--Verypaleblue);
+}
+
+.price{
+  margin-right: 7rem;
+}
+
+.card__plan p{
+  font-weight: 700;
+  color: var(--Darkblue);
+}
+
+.card__plan a{
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+.card__plan a:hover{
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+
+.card__action{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+button{
+  font-size: 1.5rem;
+  font-weight: 900;
+  border: none;
+  padding: 1.65rem;
+  cursor: pointer;
+}
+
+.cta{
+  border-radius: 0.85rem;
+  color: white;
+  background-color: var(--Brightblue);
+  box-shadow: -1px 9px 11px -1px var(--Desaturatedblue);
+-webkit-box-shadow: -1px 9px 11px -1px var(--Desaturatedblue);
+-moz-box-shadow: -1px 9px 11px -1px var(--Desaturatedblue);
+}
+
+.cta:hover{
+  opacity: 0.8;
+}
+
+.cta-m{
+  background-color: transparent;
+  color: var(--Desaturatedblue);
+}
+
+.cta-m:hover{
+  color: var(--Darkblue);
+}
+
+
+@media (min-width:860px){
+  body{
+    background-color: var(--Paleblue);
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+  }
+ 
+}
