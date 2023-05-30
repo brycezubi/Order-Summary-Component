@@ -1,5 +1,5 @@
 # Frontend Mentor - Order Summary Component
-This is a solution to the [QR Component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj/hub)
+This is a solution to the [Order Summary Component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj/hub)
 Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
